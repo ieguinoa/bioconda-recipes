@@ -3,23 +3,22 @@ package:
   version: "2016_01_05"
 
 source:
-  git_rev: '7eaa81b'
-  git_url: https://bitbucket.org/juanlmateo/cctop_standalone.git
+   git_url: https://bitbucket.org/juanlmateo/cctop_standalone.git
+   git_rev: '7eaa81b'
 
 requirements:
   run:
+    - python
     - bx-python
     - bowtie    
 
-#test:
-#  imports:
-#    - pyinstrument
 
 test:
   files:
     - phiX.fasta
     - run_test.sh
     - test_input.fasta
+
 
 about:
   home: https://bitbucket.org/juanlmateo/cctop_standalone
